@@ -1,52 +1,21 @@
-apply plugin: 'android-sdk-manager'
-apply plugin: 'com.android.application'
+//apply plugin: 'android-sdk-manager'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
 
-    signingConfigs {
-        release
-    }
 
     defaultConfig {
-        applicationId "com.emmaguy.cleanstatusbar"
         minSdkVersion 15
         targetSdkVersion 22
         versionCode 18
         versionName "1.1.4"
     }
-    buildTypes {
-        debug {
-            applicationIdSuffix ".debug"
-        }
-        release {
-            minifyEnabled false
-            signingConfig signingConfigs.release
-        }
-    }
+
     lintOptions {
         abortOnError false
     }
-}
-
-def Properties props = new Properties()
-if (project.hasProperty("signing.properties") && file(project.property("signing.properties")).canRead()) {
-    props.load(new FileInputStream(file(project.property("signing.properties"))))
-
-    if (props != null && props.containsKey('STORE_FILE') && props.containsKey('STORE_PASSWORD') &&
-            props.containsKey('KEY_ALIAS') && props.containsKey('KEY_PASSWORD')) {
-        android.signingConfigs.release.storeFile = file(props['STORE_FILE'])
-        android.signingConfigs.release.storePassword = props['STORE_PASSWORD']
-        android.signingConfigs.release.keyAlias = props['KEY_ALIAS']
-        android.signingConfigs.release.keyPassword = props['KEY_PASSWORD']
-    } else {
-        println 'signing.properties found but some entries are missing'
-        android.buildTypes.release.signingConfig = null
-    }
-} else {
-    println 'signing.properties not found'
-    android.buildTypes.release.signingConfig = null
 }
 
 dependencies {

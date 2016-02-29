@@ -1,10 +1,10 @@
-package com.emmaguy.cleanstatusbar.config;
+package com.emmaguy.cleanstatusbar.lib.config;
 
 import android.content.res.AssetManager;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 
-import com.emmaguy.cleanstatusbar.R;
+import com.emmaguy.cleanstatusbar.lib.R;
 
 public class KitKatStatusBarConfig extends DefaultStatusBarConfig implements StatusBarConfig {
     private final boolean mKitKatGradientEnabled;

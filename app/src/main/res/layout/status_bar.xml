@@ -2,7 +2,7 @@
 <merge
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="@layout/status_bar_linear_layout">
+    tools:showIn="@layout/status_bar_container">
 
     <ImageView
         android:id="@+id/status_bar_gps"
@@ -24,7 +24,7 @@
         android:paddingRight="1dp"
         tools:src="@drawable/network_icon_off" />
 
-    <com.emmaguy.cleanstatusbar.widgets.BatteryMeterView
+    <com.emmaguy.cleanstatusbar.lib.widgets.BatteryMeterView
         android:id="@+id/status_bar_battery"
         android:layout_width="8dp"
         android:paddingRight="0.5dp"

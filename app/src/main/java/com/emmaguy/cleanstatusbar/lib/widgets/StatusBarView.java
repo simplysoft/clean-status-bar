@@ -1,4 +1,4 @@
-package com.emmaguy.cleanstatusbar.widgets;
+package com.emmaguy.cleanstatusbar.lib.widgets;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -18,8 +18,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.emmaguy.cleanstatusbar.R;
-import com.emmaguy.cleanstatusbar.config.StatusBarConfig;
+import com.emmaguy.cleanstatusbar.lib.R;
+import com.emmaguy.cleanstatusbar.lib.config.StatusBarConfig;
 
 public class StatusBarView extends LinearLayout {
     private static final int NETWORK_STATUS_ICON_OFF = 0;

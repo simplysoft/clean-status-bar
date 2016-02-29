@@ -1,9 +1,9 @@
-package com.emmaguy.cleanstatusbar.config;
+package com.emmaguy.cleanstatusbar.lib.config;
 
 import android.content.res.AssetManager;
 import android.content.res.Resources;
 
-import com.emmaguy.cleanstatusbar.R;
+import com.emmaguy.cleanstatusbar.lib.R;
 
 public class MStatusBarConfig extends LollipopStatusBarConfig {
     private final boolean mLightModeEnabled;

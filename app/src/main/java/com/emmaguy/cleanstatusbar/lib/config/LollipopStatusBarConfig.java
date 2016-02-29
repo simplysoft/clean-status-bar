@@ -1,4 +1,4 @@
-package com.emmaguy.cleanstatusbar.config;
+package com.emmaguy.cleanstatusbar.lib.config;
 
 import android.content.res.AssetManager;
 import android.content.res.Resources;
@@ -6,7 +6,7 @@ import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 
-import com.emmaguy.cleanstatusbar.R;
+import com.emmaguy.cleanstatusbar.lib.R;
 
 public class LollipopStatusBarConfig extends DefaultStatusBarConfig {
     public LollipopStatusBarConfig(Resources r, AssetManager a) {

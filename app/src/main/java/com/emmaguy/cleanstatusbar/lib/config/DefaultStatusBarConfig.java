@@ -1,4 +1,4 @@
-package com.emmaguy.cleanstatusbar.config;
+package com.emmaguy.cleanstatusbar.lib.config;
 
 import android.content.res.AssetManager;
 import android.content.res.Resources;
@@ -7,8 +7,7 @@ import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.LinearLayout;
-
-import com.emmaguy.cleanstatusbar.R;
+import com.emmaguy.cleanstatusbar.lib.R;
 
 public class DefaultStatusBarConfig implements StatusBarConfig {
     private static final String RESOURCE_NAME_STATUS_BAR_HEIGHT = "status_bar_height";

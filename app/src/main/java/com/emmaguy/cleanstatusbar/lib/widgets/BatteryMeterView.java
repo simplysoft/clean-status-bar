@@ -1,4 +1,4 @@
-package com.emmaguy.cleanstatusbar.widgets;
+package com.emmaguy.cleanstatusbar.lib.widgets;
 /*
  * Copyright (C) 2013 The Android Open Source Project
  *
@@ -25,7 +25,7 @@ import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.emmaguy.cleanstatusbar.R;
+import com.emmaguy.cleanstatusbar.lib.R;
 
 public class BatteryMeterView extends View {
     private float mButtonHeightFraction;
